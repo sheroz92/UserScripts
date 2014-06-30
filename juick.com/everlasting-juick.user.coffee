@@ -5,10 +5,10 @@
 // @author        dluciv
 // @license       WTFPLv2 (http://wtfpl.net/)
 // @version       0.0.2.6
-// @icon          http://s3.amazonaws.com/uso_ss/icon/346233/large.png
-// @homepage      https://greasyfork.org/scripts/646-everlasting-juick
-// @updateURL     https://greasyfork.org/scripts/646-everlasting-juick/code/Everlasting%20Juick.meta.js
-// @downloadURL   https://greasyfork.org/scripts/646-everlasting-juick/code/Everlasting%20Juick.user.js
+// @icon          https://raw.githubusercontent.com/dluciv/UserScripts/master/juick.com/everlasting-juick.png
+// @homepage      https://github.com/dluciv/UserScripts/tree/master/juick.com
+// @updateURL     https://raw.githubusercontent.com/dluciv/UserScripts/master/juick.com/everlasting-juick.user.js
+// @downloadURL   https://raw.githubusercontent.com/dluciv/UserScripts/master/juick.com/everlasting-juick.user.js
 //
 // @include       http://juick.com/*
 // ==/UserScript==
