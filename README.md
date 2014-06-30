@@ -19,7 +19,7 @@
   то зачем они ещё нужны?.
 * На смену ему приходят (и оба хорошо интегрированы с GitHub):
   * [OpenUserJs](https://openuserjs.org/users/dluciv/scripts) и
-  * [Greasy fork](http://greasyfork.org/), который пока что не вполне устаканился и в целях безопасности вытворяет
+  * [Greasy fork](https://greasyfork.org/users/531-dluciv), который пока что не вполне устаканился и в целях безопасности вытворяет
   [какие-то немного странные вещи](https://greasyfork.org/forum/discussion/comment/2464/#Comment_2464).
 
 В итоге получается, что, кроме как на GitHub, больше особо и негде =).
