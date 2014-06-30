@@ -4,7 +4,7 @@
 // @description   Everlasting Juick scrolling / Бесконечный скроллинг Жуйка
 // @author        dluciv
 // @license       WTFPLv2 (http://wtfpl.net/)
-// @version       0.0.2.6
+// @version       0.0.2.7
 // @icon          https://raw.githubusercontent.com/dluciv/UserScripts/master/juick.com/everlasting-juick.png
 // @homepage      https://github.com/dluciv/UserScripts/tree/master/juick.com
 // @updateURL     https://raw.githubusercontent.com/dluciv/UserScripts/master/juick.com/everlasting-juick.user.js
@@ -128,8 +128,6 @@ window.addEventListener 'load', ->
   if hash
     scrollto = hash[1]
     scrolly  = hash[2]
-    # console.log "Scroll to this message: #{scrollto} @ #{scrolly}"
-    # console.log "Its native top is " + $("article[data-mid=\"#{scrollto}\"]").offset().top
     $(window).scrollTop($("article[data-mid=\"#{scrollto}\"]").offset().top - (+scrolly))
 
   addClickHandlers $("div#loaded_from_#{initialbefore} > article a")
