@@ -1,4 +1,3 @@
-
 window.addEventListener 'load', ->
   $ = unsafeWindow.jQuery
 
@@ -126,5 +125,9 @@ window.addEventListener 'load', ->
     if !doNotLoadNext && $(window).innerHeight() + $(window).scrollTop() >= $("body").height() - bottomScrollArea
       loadNextPage()
 
-  return
+  try
+    console.log "Auto-update: " + GM_info.scriptWillUpdate
+  catch e
+    console.log "GM_info trouble"
 
+  return
