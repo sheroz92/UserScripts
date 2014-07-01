@@ -2,7 +2,7 @@
 
 src=everlasting-juick
 
-cpp -DMETA=1 -DCODE=0 -CC -o $src.meta.coffee $src.user.coffee
-coffee -bc $src.meta.coffee
+coffee -c $src.src.coffee
+cat $src.meta.js <(echo) $src.src.js > $src.user.js
 
 git commit -a

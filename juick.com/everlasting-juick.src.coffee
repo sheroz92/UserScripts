@@ -1,24 +1,3 @@
-#if META
-`
-// ==UserScript==
-// @name          Everlasting Juick
-// @namespace     http://dluciv.name/
-// @description   Everlasting Juick scrolling / Бесконечный скроллинг Жуйка
-// @author        dluciv
-// @license       WTFPLv2 (http://wtfpl.net/)
-// @version       0.0.2.9
-// @icon          https://raw.githubusercontent.com/dluciv/UserScripts/master/juick.com/everlasting-juick.png
-// @homepage      https://github.com/dluciv/UserScripts/tree/master/juick.com
-// @updateURL     https://raw.githubusercontent.com/dluciv/UserScripts/master/juick.com/everlasting-juick.meta.js
-// @downloadURL   https://raw.githubusercontent.com/dluciv/UserScripts/master/juick.com/everlasting-juick.user.js
-// @grant         none
-//
-// @include       http://juick.com/*
-// ==/UserScript==
-`
-#endif
-
-#if CODE
 
 window.addEventListener 'load', ->
   $ = unsafeWindow.jQuery
@@ -149,4 +128,3 @@ window.addEventListener 'load', ->
 
   return
 
-#endif
