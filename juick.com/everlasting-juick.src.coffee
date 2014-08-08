@@ -1,6 +1,8 @@
-window.addEventListener 'load', ->
-  $ = unsafeWindow.jQuery
+###
+# unsafeWindow goes away
+###
 
+window.addEventListener 'load', ->
   bottomScrollArea = 350
   doNotLoadNext = false
   # prevpage = window.location.href
