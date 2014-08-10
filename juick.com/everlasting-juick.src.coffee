@@ -1,3 +1,5 @@
+# This source code is licensed under WTFPLv2 license (http://wtfpl.net)
+
 ###
 # unsafeWindow goes away
 ###
