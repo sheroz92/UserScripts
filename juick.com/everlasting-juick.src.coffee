@@ -1,4 +1,8 @@
-# This source code is licensed under WTFPLv2 license (http://wtfpl.net)
+###
+# For some legal issues, this source code is licensed dually:
+# 1. under WTFPLv2 license (http://wtfpl.net)
+# 2. under MIT license (http://opensource.org/licenses/MIT) / Copyright (c) 2014, Dmitry V. Luciv /
+###
 
 ###
 # unsafeWindow goes away
