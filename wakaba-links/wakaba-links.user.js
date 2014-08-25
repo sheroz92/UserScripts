@@ -6,7 +6,7 @@
 // @copyright     2014+, Dmitry V. Luciv
 // @license       WTFPLv2; http://wtfpl.net
 // @license       MIT; http://opensource.org/licenses/MIT
-// @version       0.0.0.5
+// @version       0.0.0.6
 // @homepage      https://github.com/dluciv/UserScripts/tree/master/wakaba-links
 // @icon          https://raw.githubusercontent.com/dluciv/UserScripts/master/wakaba-links/unyl-chan.png
 // @updateURL     https://raw.githubusercontent.com/dluciv/UserScripts/master/wakaba-links/wakaba-links.user.js
@@ -17,7 +17,7 @@
 
 try {
     var replies = document.querySelectorAll('td[id^="reply"]');
-    for(var nreply in replies)
+    for(var nreply = 0; nreply < replies.length; nreply++)
     {
 	var reply = replies[nreply];
 	var rlhref = reply.querySelector('span.reflink a[href^="javascript:insert("]');
