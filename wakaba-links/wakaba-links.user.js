@@ -6,7 +6,7 @@
 // @copyright     2014+, Dmitry V. Luciv
 // @license       WTFPLv2; http://wtfpl.net
 // @license       MIT; http://opensource.org/licenses/MIT
-// @version       0.0.0.6
+// @version       0.0.0.7
 // @homepage      https://github.com/dluciv/UserScripts/tree/master/wakaba-links
 // @icon          https://raw.githubusercontent.com/dluciv/UserScripts/master/wakaba-links/unyl-chan.png
 // @updateURL     https://raw.githubusercontent.com/dluciv/UserScripts/master/wakaba-links/wakaba-links.user.js
@@ -15,21 +15,27 @@
 // @include       http://iichan.hk/*
 // ==/UserScript==
 
+"use strict";
+
 try {
     var replies = document.querySelectorAll('td[id^="reply"]');
+
+    var mkHandler = function (anchor) {
+        return function (e) {
+            e.preventDefault();
+            window.insert(">>" + anchor); // do as before
+        };
+    };
+
     for(var nreply = 0; nreply < replies.length; nreply++)
     {
-	var reply = replies[nreply];
-	var rlhref = reply.querySelector('span.reflink a[href^="javascript:insert("]');
-	var rid = reply.getAttribute('id').replace('reply', '');
-	rlhref.setAttribute('href', "#" + rid);
-	(function(){ // yes, JS is so mutable...
-	    var _rid = rid; // so we need this
-	    rlhref.addEventListener('click', function(e) {
-		e.preventDefault();
-		window.insert(">>" + _rid); // do as before
-	    });
-	})();
+        var reply = replies[nreply];
+        var rlhref = reply.querySelector(
+	    'span.reflink a[href^="javascript:insert("]'
+	);
+        var rid = reply.getAttribute('id').replace('reply', '');
+        rlhref.setAttribute('href', "#" + rid);
+        rlhref.addEventListener('click', mkHandler(rid));
     }
 } catch(e) {
     console.log(e);
