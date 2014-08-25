@@ -31,8 +31,8 @@ try {
     {
         var reply = replies[nreply];
         var rlhref = reply.querySelector(
-	    'span.reflink a[href^="javascript:insert("]'
-	);
+            'span.reflink a[href^="javascript:insert("]'
+        );
         var rid = reply.getAttribute('id').replace('reply', '');
         rlhref.setAttribute('href', "#" + rid);
         rlhref.addEventListener('click', mkHandler(rid));
