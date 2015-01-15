@@ -78,6 +78,7 @@ window.addEventListener 'load', ->
         if status == 'success'
           $("div#loaded_from_#{prevpagenum} article.ads").remove()
           $("div#loaded_from_#{prevpagenum} div[id^=\"yandex_ad_\"]").remove()
+          $("div#loaded_from_#{prevpagenum} form").remove() # unneeded new messsage form
           
           $("div#loaded_from_#{prevpagenum} article").unwrap()
           
@@ -99,7 +100,6 @@ window.addEventListener 'load', ->
     . css
       position: "fixed"
       bottom: "5px"
-      left: "0px"
       'background-color': "#f7f7f7"
       opacity: "0.8"
       padding: "5px"
