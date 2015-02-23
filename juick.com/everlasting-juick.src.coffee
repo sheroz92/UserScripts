@@ -109,7 +109,18 @@ window.addEventListener 'load', ->
     . after '<div style="height: 40px;"/>'
 
   # Anyway everybody uses ad blockers
-  $('article.ads, div#footer-left,  div[id^="yandex_ad_"]').remove()
+  $ 'article.ads, div#footer-left,  div[id^="yandex_ad_"]'
+  . remove()
+
+  # make it full-width for both wide and narrow devices
+  # requires window to be ~1060 px or wider, else causes horizontal scrolling.
+  # TODO: it shouuld be fixed once
+  bodyborder = 50
+  contentborder = 296
+  $ 'body, body > header, body > div#footer'
+  . css 'width', "calc(100% - #{bodyborder}px)"
+  $ 'body > section#content'
+  . css 'width', "calc(100% - #{bodyborder+contentborder}px)"
 
   initialbefore = window.location.search.match /\?before=(\d+).*/
   initialbefore = initialbefore && initialbefore[1] || "0"
