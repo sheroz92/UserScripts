@@ -6,9 +6,9 @@
 // @copyright     2015+, Dmitry V. Luciv
 // @license       WTFPLv2; http://wtfpl.net
 // @license       MIT; http://opensource.org/licenses/MIT
-// @version       0.1.1
+// @version       0.1.2
 // @icon          https://raw.githubusercontent.com/dluciv/UserScripts/master/Huawei-E5372-USSD/ussd.png
-// @homepage      https://raw.githubusercontent.com/dluciv/UserScripts/master/Huawei-E5372-USSD
+// @homepage      https://github.com/dluciv/UserScripts/tree/master/Huawei-E5372-USSD
 // @updateURL     https://raw.githubusercontent.com/dluciv/UserScripts/master/Huawei-E5372-USSD/huawei-e5372-ussd.user.js
 // @downloadURL   https://raw.githubusercontent.com/dluciv/UserScripts/master/Huawei-E5372-USSD/huawei-e5372-ussd.user.js
 //
