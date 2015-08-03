@@ -6,7 +6,7 @@
 // @copyright     2015+, Dmitry V. Luciv
 // @license       WTFPLv2; http://wtfpl.net
 // @license       MIT; http://opensource.org/licenses/MIT
-// @version       1.0.1
+// @version       1.0.2
 // @icon          https://raw.githubusercontent.com/dluciv/UserScripts/master/Huawei-E5372-USSD/ussd.png
 // @homepage      https://github.com/dluciv/UserScripts/tree/master/Huawei-E5372-USSD
 // @updateURL     https://raw.githubusercontent.com/dluciv/UserScripts/master/Huawei-E5372-USSD/huawei-e5372-ussd.user.js
@@ -30,7 +30,7 @@
         } catch (e) {}
         document.body.innerHTML +=
             '<div id="huawei_ussd_keypad" style="display:block; position: absolute; top:15px; right: 15px; border: 1px solid black; background-color: white; padding: 5px; width: 135px; z-index: 10000;">'+
-            '<span style="background-color: silver; height: 20px; padding: 5px;">Send or type<span><input type="button" onclick="document.getElementById(\'huawei_ussd_keypad\').remove();" value="X" style="float:right; height: 20px;"/><hr/>'+
+            '<input type="button" onclick="document.getElementById(\'huawei_ussd_keypad\').remove();" value="X" style=""/><span style="background-color: silver; height: 20px; padding: 5px;">Send or type</span><hr/>'+
             '<input type="text" id="huawei_ussd_text" value="*100#" style="width:84px; padding:2px; border: 1px solid black;" /><input type="button" value="&gt;&gt;" onclick="huawei_send_USSD(document.getElementById(\'huawei_ussd_text\').value)" style="width:45px;" /><br/>'+
             '<input type="button" value="1" onclick="huawei_send_USSD(\'1\')" style="width:45px;" /><input type="button" value="2" onclick="huawei_send_USSD(\'2\')" style="width:45px;" /><input type="button" value="3" onclick="huawei_send_USSD(\'3\')" style="width:45px;" /><br/>'+
             '<input type="button" value="4" onclick="huawei_send_USSD(\'4\')" style="width:45px;" /><input type="button" value="5" onclick="huawei_send_USSD(\'5\')" style="width:45px;" /><input type="button" value="6" onclick="huawei_send_USSD(\'6\')" style="width:45px;" /><br/>'+
