@@ -6,7 +6,7 @@
 // @copyright     2015+, Dmitry V. Luciv
 // @license       WTFPLv2; http://wtfpl.net
 // @license       MIT; http://opensource.org/licenses/MIT
-// @version       0.2.0
+// @version       0.2.1
 // @icon          https://raw.githubusercontent.com/dluciv/UserScripts/master/Huawei-E5372-USSD/ussd.png
 // @homepage      https://github.com/dluciv/UserScripts/tree/master/Huawei-E5372-USSD
 // @updateURL     https://raw.githubusercontent.com/dluciv/UserScripts/master/Huawei-E5372-USSD/huawei-e5372-ussd.user.js
@@ -26,12 +26,8 @@
       unsafeWindow.sendCommonByUssd(ussd, "CodeType");
     }
   };
-  var nop = function(){};
-  GM_registerMenuCommand("-- Any USSD --", nop);
-  GM_registerMenuCommand("USSD", doall, "u");
+  GM_registerMenuCommand("USSD: enter command", doall, "u");
 
-  GM_registerMenuCommand("-- Common replies --", nop);
-  
   var comrep = [
     '1', '2', '3',
     '4', '5', '6',
@@ -40,7 +36,7 @@
   ];
   for(var n=0; n < comrep.length; ++n){
     (function(nn){
-      GM_registerMenuCommand("Reply " + nn, function(){
+      GM_registerMenuCommand("USSD: reply " + nn, function(){
         unsafeWindow.sendCommonByUssd(nn, "CodeType");
       }, nn.length == 1 ? nn: null);
     })(comrep[n]);
