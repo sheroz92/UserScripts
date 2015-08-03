@@ -6,7 +6,7 @@
 // @copyright     2015+, Dmitry V. Luciv
 // @license       WTFPLv2; http://wtfpl.net
 // @license       MIT; http://opensource.org/licenses/MIT
-// @version       1.0.2
+// @version       1.0.3
 // @icon          https://raw.githubusercontent.com/dluciv/UserScripts/master/Huawei-E5372-USSD/ussd.png
 // @homepage      https://github.com/dluciv/UserScripts/tree/master/Huawei-E5372-USSD
 // @updateURL     https://raw.githubusercontent.com/dluciv/UserScripts/master/Huawei-E5372-USSD/huawei-e5372-ussd.user.js
@@ -20,9 +20,9 @@
 // ==/UserScript==
 
 (function() {
-    unsafeWindow.huawei_send_USSD = function(ussd_code){
+    unsafeWindow.huawei_send_USSD = exportFunction(function(ussd_code){
         unsafeWindow.sendCommonByUssd(ussd_code, "CodeType");
-    };
+    }, unsafeWindow);
 
     var addpad = function() {
         try {
