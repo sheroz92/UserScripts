@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Even Better ADC
 // @namespace    https://dluciv.name/
-// @version      0.1.1
+// @version      0.1.2
 // @description  Неужели ADC может быть ещё лучше и удобнее? Да, с этим скриптом может.
 // @author       Dmitry V. Luciv
 // @icon         https://raw.githubusercontent.com/dluciv/UserScripts/master/adc.spbu.ru/spbu-icon.png
