@@ -5,7 +5,7 @@
 1. Установить [TamperMonkey](https://www.tampermonkey.net/) или аналогичный плагин к браузеру
 2. Перейти [по ссылке](https://raw.githubusercontent.com/dluciv/UserScripts/master/adc.spbu.ru/even-better-adc.user.js) и согласиться установить скрипт
 3. Открыть нужную страницу на https://adc.spbu.ru/
-4. Посмотреть, какие «русские» пункты добавились в меню TamperMonkey (квадрат с двумя кружочками)
+4. Посмотреть, какие пункты добавились в меню TamperMonkey (квадрат с двумя кружочками) в списке подпунктов «Even Better ADC»
 
 ## Юзерскрипт умеет
 
