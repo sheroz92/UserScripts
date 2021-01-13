@@ -1,13 +1,14 @@
 // ==UserScript==
 // @name         Even Better ADC
 // @namespace    https://dluciv.name/
-// @version      0.1.2
+// @version      0.2.0
 // @description  Неужели ADC может быть ещё лучше и удобнее? Да, с этим скриптом может.
 // @author       Dmitry V. Luciv
 // @icon         https://raw.githubusercontent.com/dluciv/UserScripts/master/adc.spbu.ru/spbu-icon.png
 // @require      https://code.jquery.com/jquery-3.5.1.slim.min.js
 // @match        https://adc.spbu.ru/*
 // @grant        GM_registerMenuCommand
+// @license      WTFPLv2 http://wtfpl.net/
 // @homepage     https://github.com/dluciv/UserScripts/tree/master/adc.spbu.ru
 // @updateURL    https://raw.githubusercontent.com/dluciv/UserScripts/master/adc.spbu.ru/even-better-adc.user.js
 // @downloadURL  https://raw.githubusercontent.com/dluciv/UserScripts/master/adc.spbu.ru/even-better-adc.user.js
