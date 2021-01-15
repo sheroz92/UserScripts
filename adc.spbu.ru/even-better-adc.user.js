@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Even Better ADC
 // @namespace    https://dluciv.name/
-// @version      0.2.0
+// @version      0.3.0
 // @description  Неужели ADC может быть ещё лучше и удобнее? Да, с этим скриптом может.
 // @author       Dmitry V. Luciv
 // @icon         https://raw.githubusercontent.com/dluciv/UserScripts/master/adc.spbu.ru/spbu-icon.png
@@ -31,6 +31,7 @@
     };
 
     let deleteSelected = function(){
+        /*
         let imgs = $(
             $('tr.dxgvDataRow_XafTheme').
             find('td:first').find('.dxWeb_edtCheckBoxChecked_XafTheme').
@@ -38,9 +39,11 @@
             get().reverse()
         );
         imgs.trigger('click');
+        */
+        alert("Это больше не нужно, ADC теперь сама умеет отменять выделенные!");
     };
 
     GM_registerMenuCommand("Инвертировать выделение", invertSelection, null);
     GM_registerMenuCommand("Инвертировать содержащие", invertContaining, null);
-    GM_registerMenuCommand("Отменить выделенное", deleteSelected, null);
+    // GM_registerMenuCommand("Отменить выделенное", deleteSelected, null);
 })})();
